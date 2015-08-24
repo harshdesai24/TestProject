@@ -93,7 +93,18 @@ ALTER TABLE "EnvironmentalInfo" ADD CONSTRAINT "EnvironmentalInfoID" PRIMARY KEY
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+-- Table Events
 
+CREATE TABLE "Events"(
+ "EventsID" Bigint NOT NULL,
+ "EventType" Character varying(256),
+ "Attribute1" Integer,
+ "CreatedTimestamp" Timestamp,
+ "UpdatedTimestamp" Timestamp
+)
+;
+
+-- Create indexes for table Events
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
